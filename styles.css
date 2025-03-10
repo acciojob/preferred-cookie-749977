@@ -1,9 +1,42 @@
 :root {
-  --fontsize: 16px;
-  --fontcolor: #000000;
+    --fontsize: 16px;
+    --fontcolor: #000000;
 }
 
 body {
-  font-size: var(--fontsize);
-  color: var(--fontcolor);
+    font-size: var(--fontsize);
+    color: var(--fontcolor);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f4f4f4;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+input[type="number"], input[type="color"], input[type="submit"] {
+    margin-top: 10px;
+    padding: 8px;
+    width: 100%;
+}
+
+input[type="submit"] {
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+input[type="submit"]:hover {
+    background: #0056b3;
 }
